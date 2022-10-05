@@ -26,7 +26,7 @@
                 android:layout_height="60dp"
                 android:contentDescription="@string/app_name"
                 android:scaleType="centerTop"
-                android:src="@drawable/default_artwork"
+                android:src="@drawable/default_bg"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,6 +49,19 @@
                 android:text="10.7MB"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/durationView" />
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/artworkView"
+                android:text = "John Movidick"
+                android:textColor= "#0C0000"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="@dimen/sm"
+                android:maxLines="1"
+                android:textStyle="bold"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
