@@ -18,14 +18,14 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/song_bg">
+            android:background="@drawable/bg">
 
             <ImageView
                 android:id="@+id/artworkView"
                 android:layout_width="98dp"
                 android:layout_height="60dp"
                 android:contentDescription="@string/app_name"
-                android:scaleType="centerTop"
+                android:scaleType="center"
                 android:src="@drawable/default_bg"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
