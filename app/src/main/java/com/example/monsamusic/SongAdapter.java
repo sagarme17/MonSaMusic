@@ -31,7 +31,7 @@ public class SongAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position){
-        Song song = songs.get(position);
+        final Song song = songs.get(position);
         SongViewHolder viewHolder = (SongViewHolder) holder;
 
         viewHolder.titleHolder.setText(song.getTitle());
@@ -45,8 +45,8 @@ public class SongAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 viewHolder.artworkHolder.setImageResource(R.drawable.default_bg);
             }
         }
-        viewHolder.itemView.setOnClickListener(view -> Toast.makeText(context, song.getTitle(), Toast.LENGTH_SHORT).show());
-    }
+        viewHolder.itemView.setOnClickListener(view->Toast.makeText(context,song.getTitle(),Toast.LENGTH_SHORT).show());
+        }
 
     public static class SongViewHolder extends RecyclerView.ViewHolder{
         ImageView artworkHolder;
